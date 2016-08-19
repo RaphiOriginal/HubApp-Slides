@@ -37,16 +37,15 @@ require("spectacle/lib/themes/default/index.css");
 
 
 const images = {
-  city: require("../assets/city.jpg"),
-  kat: require("../assets/kat.png"),
-  logo: require("../assets/formidable-logo.svg"),
-  markdown: require("../assets/markdown.png")
+  ih: require("../assets/IHZ_150916_master_locations_1.jpg"),
+  ih_logo: require("../assets/IHZ_ect_Logo_white.png"),
+  logo: require("../assets/FHNW_HT_10mm.png"),
 };
 
 preloader(images);
 
 const theme = createTheme({
-  primary: "#ff4081"
+  primary: "#198caa"
 });
 
 export default class Presentation extends React.Component {
@@ -54,6 +53,55 @@ export default class Presentation extends React.Component {
     return (
       <Spectacle theme={theme}>
         <Deck transition={["zoom", "slide"]} transitionDuration={500}>
+          <Slide transition={["slide", "spin"]} bgColor="primary">
+            <Heading size={1} fit textColor="white">Bachelorthesis - HubApp</Heading>
+            <Text textColor="white">Developed with ❤️ by Livio and Raphael</Text>
+            <Image src={images.logo} width="300" style={{marginTop: 100}} />
+          </Slide>
+          <Slide bgImage={images.ih} align="flex-start" bgDarken={0.3}>
+            <Layout>
+              <Fill>
+                <Heading fit size={1} textColor="white">Impact Hub</Heading>
+              </Fill>
+              <Fill>
+                <Image src={images.ih_logo} align="flex-start" width="40%" />
+              </Fill>
+            </Layout>
+            <Layout style={{ marginTop: 20 }}>
+              <Fill>
+                <Text textColor="white" textAlign="left">
+                  Impact Hub hat weltweit über 12000 Mitglieder, davon sind etwa 700 in Zürich.
+                </Text>
+                <Text textColor="white" textAlign="left">
+                  Zurzeit hat es vier Standorte in Zürich.
+                </Text>
+                <Text textColor="white" textAlign="left">
+                  Das Suchen von Personen innerhalb der Community findet zurzeit durch Mundpropaganda statt, da bisherige Tools dazu nicht geeignet sind.
+                </Text>
+              </Fill>
+              <Fill>
+                <Text textColor="white" textAlign="left">
+                  Dies dauert lange und kostet Ressourcen bei den Mitarbeiter.
+                </Text>
+                <Text textColor="white" textAlign="left">
+                  Dass soll in Zukunft geändert werden.
+                </Text>
+              </Fill>
+            </Layout>
+          </Slide>
+          <Slide>
+            <Heading size={1} textColor="white">Aufgaben</Heading>
+            <Layout style={{ marginTop: 20 }}>
+              <Fill>
+                <Heading size={2} bgColor="white" style={{ margin: 10, marginRight: 5 }} textColor="primary" padding={15}>Word2Vec</Heading>
+                <Heading size={2} bgColor="white" style={{ margin: 10, marginRight: 5 }} textColor="primary" padding={15}>Jaccard</Heading>
+              </Fill>
+              <Fill>
+                <Heading size={2} bgColor="white" style={{ margin: 10, marginLeft: 5 }} textColor="primary" padding={15}>Motivation</Heading>
+                <Heading size={2} bgColor="white" style={{ margin: 10, marginLeft: 5 }} textColor="primary" padding={15}>Tagging</Heading>
+              </Fill>
+            </Layout>
+          </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
             <Heading size={1} fit caps lineHeight={1} textColor="black">
               Spectacle
@@ -70,7 +118,7 @@ export default class Presentation extends React.Component {
             <Text textSize="1.5em" margin="20px 0px 0px" bold>Hit Your Right Arrow To Begin!</Text>
           </Slide>
           <Slide transition={["slide"]} bgColor="black" notes="You can even put notes on your slide. How awesome is that?">
-            <Image src={images.kat.replace("/", "")} margin="0px auto 40px" height="293px"/>
+            <Image src={images.ih.replace("/", "")} margin="0px auto 40px" height="293px"/>
             <Heading size={2} caps fit textColor="primary" textFont="primary">
               Wait what?
             </Heading>
@@ -82,7 +130,7 @@ export default class Presentation extends React.Component {
               margin="20px auto"
             />
           </Slide>
-          <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
+          <Slide transition={["slide"]} bgImage={images.ih.replace("/", "")} bgDarken={0.75}>
             <Appear fid="1">
               <Heading size={1} caps fit textColor="primary">
                 Full Width
@@ -126,8 +174,6 @@ export default class Presentation extends React.Component {
             </Heading>
             <Markdown>
               {`
-![Markdown Logo](${images.markdown.replace("/", "")})
-
 You can write inline images, [Markdown Links](http://commonmark.org), paragraph text and most other markdown syntax
 * Lists too!
 * With ~~strikethrough~~ and _italic_
