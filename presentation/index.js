@@ -38,6 +38,7 @@ require("spectacle/lib/themes/default/index.css");
 
 const images = {
   ih: require("../assets/IHZ_150916_master_locations_1.jpg"),
+  iha: require("../assets/IHZ_150916_master_locations_3.jpg"),
   ih_logo: require("../assets/IHZ_ect_Logo_white.png"),
   logo: require("../assets/FHNW_HT_10mm.png"),
 };
@@ -89,9 +90,9 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
-          <Slide>
-            <Heading size={1} textColor="white">Aufgaben</Heading>
-            <Layout style={{ marginTop: 20 }}>
+          <Slide bgImage={images.iha} bgDarken={0.5}>
+            <Heading size={1} textColor="primary" padding={20} margin={10} style={{ marginBottom: 0 }} bgColor="white">Herausforderungen</Heading>
+            <Layout style={{ marginTop: 0 }}>
               <Fill>
                 <Heading size={2} bgColor="white" style={{ margin: 10, marginRight: 5 }} textColor="primary" padding={15}>Word2Vec</Heading>
                 <Heading size={2} bgColor="white" style={{ margin: 10, marginRight: 5 }} textColor="primary" padding={15}>Jaccard</Heading>
@@ -101,6 +102,15 @@ export default class Presentation extends React.Component {
                 <Heading size={2} bgColor="white" style={{ margin: 10, marginLeft: 5 }} textColor="primary" padding={15}>Tagging</Heading>
               </Fill>
             </Layout>
+          </Slide>
+          <Slide>
+            <Heading>Herausforderungen</Heading>
+          </Slide>
+          <Slide>
+            <Heading>Highligts</Heading>
+          </Slide>
+          <Slide>
+            <Heading>Reflexion</Heading>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
             <Heading size={1} fit caps lineHeight={1} textColor="black">
