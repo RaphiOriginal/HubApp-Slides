@@ -41,6 +41,9 @@ const images = {
   iha: require("../assets/IHZ_150916_master_locations_3.jpg"),
   ih_logo: require("../assets/IHZ_ect_Logo_white.png"),
   logo: require("../assets/FHNW_HT_10mm.png"),
+  ihlogo: require("../assets/151009_MashUp_Banner1.png"),
+  coffee: require("../assets/SkillShare.png"),
+  garage: require("../assets/IHZ_150916_master_locations_L2.jpg"),
 };
 
 preloader(images);
@@ -53,7 +56,7 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Spectacle theme={theme}>
-        <Deck transition={["zoom", "slide"]} transitionDuration={500}>
+        <Deck transition={["slide", "spin"]} transitionDuration={500}>
           <Slide transition={["slide", "spin"]} bgColor="primary">
             <Heading size={1} fit textColor="white">Bachelorthesis - HubApp</Heading>
             <Text textColor="white">Developed with ❤️ by Livio and Raphael</Text>
@@ -91,25 +94,70 @@ export default class Presentation extends React.Component {
             </Layout>
           </Slide>
           <Slide bgImage={images.iha} bgDarken={0.5}>
-            <Heading size={1} textColor="primary" padding={20} margin={10} style={{ marginBottom: 0 }} bgColor="white">Herausforderungen</Heading>
+            <Heading size={1} textColor="white" padding={20} margin={10} style={{ marginBottom: 0 }} bgColor="primary">Herausforderungen</Heading>
             <Layout style={{ marginTop: 0 }}>
               <Fill>
-                <Heading size={2} bgColor="white" style={{ margin: 10, marginRight: 5 }} textColor="primary" padding={15}>Word2Vec</Heading>
-                <Heading size={2} bgColor="white" style={{ margin: 10, marginRight: 5 }} textColor="primary" padding={15}>Jaccard</Heading>
+                <Heading size={2} bgColor="primary" style={{ margin: 10, marginRight: 5 }} textColor="white" padding={15}>Word2Vec</Heading>
+                <Heading size={2} bgColor="primary" style={{ margin: 10, marginRight: 5 }} textColor="white" padding={15}>Jaccard</Heading>
               </Fill>
               <Fill>
-                <Heading size={2} bgColor="white" style={{ margin: 10, marginLeft: 5 }} textColor="primary" padding={15}>Motivation</Heading>
-                <Heading size={2} bgColor="white" style={{ margin: 10, marginLeft: 5 }} textColor="primary" padding={15}>Tagging</Heading>
+                <Heading size={2} bgColor="primary" style={{ margin: 10, marginLeft: 5 }} textColor="white" padding={15}>Motivation</Heading>
+                <Heading size={2} bgColor="primary" style={{ margin: 10, marginLeft: 5 }} textColor="white" padding={15}>Tagging</Heading>
               </Fill>
             </Layout>
           </Slide>
-          <Slide>
-            <Heading>Herausforderungen</Heading>
+          <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5}>
+            <Heading size={1} textColor="white">Word2Vec</Heading>
+            <Layout style={{ marginTop: 40 }}>
+              <Fill>
+                <Text textAlign="left" textColor="white">Das finden einer geeigneten Datenquelle zum lernen.</Text>
+              </Fill>
+              <Fill>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">LinkedIn</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Xing</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Wikipedia</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">StackExchange</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Google News</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Impact Hub</Heading></Appear>
+              </Fill>
+            </Layout>
           </Slide>
-          <Slide>
+          <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5}>
+            <Heading size={1} textColor="white">Motivation</Heading>
+            <Layout style={{ marginTop: 40 }}>
+              <Fill>
+                <Text textAlign="left" textColor="white">Das Design-Pattern von Nir Eyal umfasst vier States.</Text>
+              </Fill>
+              <Fill>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Trigger</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Action</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Reward</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Investement</Heading></Appear>
+              </Fill>
+            </Layout>
+          </Slide>
+          <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5}>
+            <Heading size={1} textColor="white">Tagging</Heading>
+            <Layout style={{ marginTop: 40 }}>
+              <Fill>
+                <Text textAlign="left" textColor="white">Mit dem Tagging kann man Probleme wie Messy Metadata mithilfe von einfachen Tools lösen.</Text>
+              </Fill>
+              <Fill>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Suggestions</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Tag Cloud</Heading></Appear>
+              </Fill>
+            </Layout>
+          </Slide>
+          <Slide bgImage={images.coffee} align="flex-start" bgDarken={0.3}>
             <Heading>Highligts</Heading>
+            <Layout style={{ marginTop: 230 }}>
+              <Fill>
+                <Text textAlign="left" textColor="white">Die Kooperation mit dem Kunden und dessen Mitarbeiter,</Text>
+                <Text textAlign="left" textColor="white">sowie die Verwendung von React-Native.</Text>
+              </Fill>
+            </Layout>
           </Slide>
-          <Slide>
+          <Slide bgImage={images.garage} align="flex-start" bgDarken={0.5}>
             <Heading>Reflexion</Heading>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
