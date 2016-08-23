@@ -152,8 +152,8 @@ export default class Presentation extends React.Component {
             <Heading>Highligts</Heading>
             <Layout style={{ marginTop: 230 }}>
               <Fill>
-                <Text textAlign="left" textColor="white">Die Kooperation mit dem Kunden und dessen Mitarbeiter,</Text>
-                <Text textAlign="left" textColor="white">sowie die Verwendung von React-Native.</Text>
+                <Text textAlign="left" textColor="white">Die Kooperation mit dem Kunden und dessen Mitarbeiter ☕️,</Text>
+                <Text textAlign="left" textColor="white">sowie die Verwendung von React-Native 🎉.</Text>
               </Fill>
             </Layout>
           </Slide>
