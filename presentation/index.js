@@ -111,6 +111,14 @@ export default class Presentation extends React.Component {
             <Layout style={{ marginTop: 40 }}>
               <Fill>
                 <Text textAlign="left" textColor="white">Das finden einer geeigneten Datenquelle zum lernen.</Text>
+                <BlockQuote style={{ marginTop: 100 }}>
+                  <Quote textColor="white">
+                    Das isch jo wie Google!
+                  </Quote>
+                  <Cite>
+                    Jana Neumann
+                  </Cite>
+                </BlockQuote>
               </Fill>
               <Fill>
                 <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">LinkedIn</Heading></Appear>
@@ -157,8 +165,21 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
-          <Slide bgImage={images.garage} align="flex-start" bgDarken={0.5}>
+          <Slide bgImage={images.garage} align="flex-start" bgDarken={0.7}>
             <Heading>Reflexion</Heading>
+            <Layout style={{ marginTop: 100 }}>
+              <Fill>
+                <Text textSize={60} textAlign="left" textColor="white">Langsamer Start des Projektes.</Text>
+                <Text textSize={60} textAlign="left" textColor="white">Qualität erster Interviews.</Text>
+                <Text textSize={60} textAlign="left" textColor="white">Mitarbeit der Members.</Text>
+                <Text textSize={60} textAlign="left" textColor="white">Usability Testing.</Text>
+                <Text textSize={60} textAlign="left" textColor="white">Motivation.</Text>
+              </Fill>
+            </Layout>
+          </Slide>
+          <Slide>
+            <Heading fit>Fragen?</Heading>
+            <Text textSize={30} textColor="white" margin={50}>That's a silly question!</Text>
           </Slide>
           <Slide transition={["zoom"]} bgColor="primary">
             <Heading size={1} fit caps lineHeight={1} textColor="black">
