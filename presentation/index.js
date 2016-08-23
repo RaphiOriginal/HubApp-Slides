@@ -73,21 +73,21 @@ export default class Presentation extends React.Component {
             </Layout>
             <Layout style={{ marginTop: 20 }}>
               <Fill>
-                <Text textColor="white" textAlign="left">
+                <Text textColor="white" textAlign="left" style={{ paddingRight: 20 }}>
                   Impact Hub hat weltweit über 12000 Mitglieder, davon sind etwa 700 in Zürich.
                 </Text>
-                <Text textColor="white" textAlign="left">
+                <Text textColor="white" textAlign="left" style={{ paddingRight: 20 }}>
                   Zurzeit hat es vier Standorte in Zürich.
                 </Text>
-                <Text textColor="white" textAlign="left">
+                <Text textColor="white" textAlign="left" style={{ paddingRight: 20 }}>
                   Das Suchen von Personen innerhalb der Community findet zurzeit durch Mundpropaganda statt, da bisherige Tools dazu nicht geeignet sind.
                 </Text>
               </Fill>
               <Fill>
-                <Text textColor="white" textAlign="left">
+                <Text textColor="white" textAlign="left" style={{ paddingRight: 20 }}>
                   Dies dauert lange und kostet Ressourcen bei den Mitarbeiter.
                 </Text>
-                <Text textColor="white" textAlign="left">
+                <Text textColor="white" textAlign="left" style={{ paddingRight: 20 }}>
                   Dass soll in Zukunft geändert werden.
                 </Text>
               </Fill>
