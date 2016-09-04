@@ -44,6 +44,7 @@ const images = {
   ihlogo: require("../assets/151009_MashUp_Banner1.png"),
   coffee: require("../assets/SkillShare.png"),
   garage: require("../assets/IHZ_150916_master_locations_L2.jpg"),
+  postit: require("../assets/ImpactWS.png"),
 };
 
 preloader(images);
@@ -58,11 +59,33 @@ export default class Presentation extends React.Component {
       <Spectacle theme={theme}>
         <Deck transition={["slide", "spin"]} transitionDuration={500}>
           <Slide transition={["slide", "spin"]} bgColor="primary">
+            {
+              //Egal
+            }
             <Heading size={1} fit textColor="white">Bachelorthesis - HubApp</Heading>
             <Text textColor="white">Developed with ❤️ by Livio and Raphael</Text>
             <Image src={images.logo} width="300" style={{marginTop: 100}} />
           </Slide>
+          <Slide bgImage={images.postit} bgDarken={0.3} align="flex-start">
+            {
+              //Egal
+            }
+            <Heading size={1} textColor="white">Inhalt</Heading>
+            <Layout style={{ marginTop: 40 }}>
+              <Fill>
+                <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Impact Hub</Heading>
+                <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Herausforderungen</Heading>
+                <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Demo</Heading>
+                <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Highligts</Heading>
+                <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Reflexion</Heading>
+                <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Ausblick</Heading>
+              </Fill>
+            </Layout>
+          </Slide>
           <Slide bgImage={images.ih} align="flex-start" bgDarken={0.3}>
+            {
+              //
+            }
             <Layout>
               <Fill>
                 <Heading fit size={1} textColor="white">Impact Hub</Heading>
@@ -94,11 +117,14 @@ export default class Presentation extends React.Component {
             </Layout>
           </Slide>
           <Slide bgImage={images.iha} bgDarken={0.5}>
+            {
+              //Raffi
+            }
             <Heading size={1} textColor="white" padding={20} margin={10} style={{ marginBottom: 0 }} bgColor="primary">Herausforderungen</Heading>
             <Layout style={{ marginTop: 0 }}>
               <Fill>
                 <Heading size={2} bgColor="primary" style={{ margin: 10, marginRight: 5 }} textColor="white" padding={15}>Word2Vec</Heading>
-                <Heading size={2} bgColor="primary" style={{ margin: 10, marginRight: 5 }} textColor="white" padding={15}>Jaccard</Heading>
+                <Heading size={2} bgColor="primary" style={{ margin: 10, marginRight: 5 }} textColor="white" padding={15}>Styling</Heading>
               </Fill>
               <Fill>
                 <Heading size={2} bgColor="primary" style={{ margin: 10, marginLeft: 5 }} textColor="white" padding={15}>Motivation</Heading>
@@ -107,6 +133,9 @@ export default class Presentation extends React.Component {
             </Layout>
           </Slide>
           <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5}>
+            {
+              //Raffi
+            }
             <Heading size={1} textColor="white">Word2Vec</Heading>
             <Layout style={{ marginTop: 40 }}>
               <Fill>
@@ -131,6 +160,25 @@ export default class Presentation extends React.Component {
             </Layout>
           </Slide>
           <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5}>
+            {
+              //Livio
+            }
+            <Heading size={1} textColor="white">Styling</Heading>
+            <Layout style={{ marginTop: 40 }}>
+              <Fill>
+                <Text textAlign="left" textColor="white">Erstellen von brauchbaren UI-Komponenten.</Text>
+              </Fill>
+              <Fill>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Tags</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Tagcloud</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Buttons</Heading></Appear>
+              </Fill>
+            </Layout>
+          </Slide>
+          <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5}>
+            {
+              //Raffi
+            }
             <Heading size={1} textColor="white">Motivation</Heading>
             <Layout style={{ marginTop: 40 }}>
               <Fill>
@@ -145,6 +193,9 @@ export default class Presentation extends React.Component {
             </Layout>
           </Slide>
           <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5}>
+            {
+              //Raffi
+            }
             <Heading size={1} textColor="white">Tagging</Heading>
             <Layout style={{ marginTop: 40 }}>
               <Fill>
@@ -156,6 +207,10 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
+          <Slide>
+            <Heading size={1} fit caps textColor="white">Demo</Heading>
+            <Heading size={3} textColor="white" margin={70}>📲</Heading>
+          </Slide>
           <Slide bgImage={images.coffee} align="flex-start" bgDarken={0.3}>
             <Heading>Highligts</Heading>
             <Layout style={{ marginTop: 230 }}>
@@ -165,7 +220,34 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
+          <Slide bgImage={images.coffee} align="flex-start" bgDarken={0.3}>
+            {
+              //Livio
+            }
+            <Heading>React-Native</Heading>
+            <Layout style={{ marginTop: 230 }}>
+              <Fill>
+                <Text textAlign="left" textColor="white">Die Kooperation mit dem Kunden und dessen Mitarbeiter ☕️,</Text>
+                <Text textAlign="left" textColor="white">sowie die Verwendung von React-Native 🎉.</Text>
+              </Fill>
+            </Layout>
+          </Slide>
+          <Slide bgImage={images.coffee} align="flex-start" bgDarken={0.3}>
+            {
+              //Raffi
+            }
+            <Heading>Usertests</Heading>
+            <Layout style={{ marginTop: 230 }}>
+              <Fill>
+                <Text textAlign="left" textColor="white">Die Kooperation mit dem Kunden und dessen Mitarbeiter ☕️,</Text>
+                <Text textAlign="left" textColor="white">sowie die Verwendung von React-Native 🎉.</Text>
+              </Fill>
+            </Layout>
+          </Slide>
           <Slide bgImage={images.garage} align="flex-start" bgDarken={0.7}>
+            {
+              //
+            }
             <Heading>Reflexion</Heading>
             <Layout style={{ marginTop: 100 }}>
               <Fill>
@@ -178,6 +260,15 @@ export default class Presentation extends React.Component {
             </Layout>
           </Slide>
           <Slide>
+            {
+              //
+            }
+            <Heading size={1} textColor="white">Ausblick</Heading>
+          </Slide>
+          <Slide>
+            {
+              //
+            }
             <Heading fit>Fragen?</Heading>
             <Text textSize={30} textColor="white" margin={50}>That's a silly question!</Text>
           </Slide>
