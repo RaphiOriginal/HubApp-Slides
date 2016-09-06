@@ -159,7 +159,8 @@ export default class Presentation extends React.Component {
             "<ul>
               <li>Quellen</li>
               <li>Java vs. Python</li>
-              <li>Demo</li>
+              <li>Demo: Postman</li>
+              <li>Funny Quote</li>
             </ul>">
             {
               //Raffi
@@ -203,7 +204,14 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
-          <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5}>
+          <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5} notes=
+            "<ul>
+              <li>Nir Eyal</li>
+              <li>Trigger: Person suchen</li>
+              <li>Action: Suche starten</li>
+              <li>Reward: Resultate erhalten, Similarity unterstützt dabei</li>
+              <li>Investment: Angabe von skills, weitere investments notwendig</li>
+            </ul>">
             {
               //Raffi
             }
@@ -220,7 +228,14 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
-          <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5}>
+          <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5} notes=
+            "<ul>
+              <li>Skills als Tags</li>
+              <li>Messy Metadata</li>
+              <li>Suggestions</li>
+              <li>Tagcloud als Unterstützung</li>
+              <li>Tags als Button verwenden und weitere Funktionalitäten</li>
+            </ul>">
             {
               //Raffi
             }
@@ -260,7 +275,14 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
-          <Slide bgImage={images.coffee} align="flex-start" bgDarken={0.3}>
+          <Slide bgImage={images.coffee} align="flex-start" bgDarken={0.3} notes=
+            "<ul>
+              <li>Lookback ist kostenlos</li>
+              <li>Lookback braucht keinen Jailbreak</li>
+              <li>Sendet Aufnahme direkt auf das Dashboard</li>
+              <li>Verlangsamt die Applikation bei der Aufnahme</li>
+              <li>im Debug nicht verwenden, nur beim Release</li>
+            </ul>">
             {
               //Raffi
             }
