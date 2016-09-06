@@ -45,6 +45,7 @@ const images = {
   coffee: require("../assets/SkillShare.png"),
   garage: require("../assets/IHZ_150916_master_locations_L2.jpg"),
   postit: require("../assets/ImpactWS.png"),
+  architecture: require("../assets/Architecture.png"),
 };
 
 preloader(images);
@@ -76,7 +77,7 @@ export default class Presentation extends React.Component {
                 <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Impact Hub</Heading>
                 <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Herausforderungen</Heading>
                 <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Demo</Heading>
-                <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Highligts</Heading>
+                <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Highlights</Heading>
                 <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Reflexion</Heading>
                 <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Ausblick</Heading>
               </Fill>
@@ -254,12 +255,24 @@ export default class Presentation extends React.Component {
             <Heading size={1} fit caps textColor="white">Demo</Heading>
             <Heading size={3} textColor="white" margin={70}>📲</Heading>
           </Slide>
-          <Slide bgImage={images.coffee} align="flex-start" bgDarken={0.3}>
-            <Heading>Highligts</Heading>
-            <Layout style={{ marginTop: 230 }}>
+
+          <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5}>
+            <Heading size={1} textColor="white">Umsetzung</Heading>
+            <Layout style={{ marginTop: 40 }}>
               <Fill>
-                <Text textAlign="left" textColor="white">Die Kooperation mit dem Kunden und dessen Mitarbeiter ☕️,</Text>
-                <Text textAlign="left" textColor="white">sowie die Verwendung von React-Native 🎉.</Text>
+                <Text textAlign="left" textColor="white">Das Design-Pattern von Nir Eyal umfasst vier States.</Text>
+              </Fill>
+              <Fill>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">React Native</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Redux</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">ImmutableJS</Heading></Appear>
+              </Fill>
+            </Layout>
+          </Slide>
+          <Slide bgColor="white" >
+            <Layout>
+              <Fill>
+                <Image src={images.architecture} align="flex-start" width="100%" />
               </Fill>
             </Layout>
           </Slide>
@@ -320,7 +333,6 @@ export default class Presentation extends React.Component {
               //
             }
             <Heading fit>Fragen?</Heading>
-            <Text textSize={30} textColor="white" margin={50}>That's a silly question!</Text>
           </Slide>
         </Deck>
       </Spectacle>
