@@ -88,7 +88,7 @@ export default class Presentation extends React.Component {
             }
             <Layout>
               <Fill>
-                <Heading fit size={1} textColor="white">Impact Hub</Heading>
+                <Heading fit size={1} textColor="white">Ausgangslage</Heading>
               </Fill>
               <Fill>
                 <Image src={images.ih_logo} align="flex-start" width="40%" />
@@ -115,6 +115,18 @@ export default class Presentation extends React.Component {
                 </Text>
               </Fill>
             </Layout>
+          </Slide>
+          <Slide bgImage={images.postit} bgDarken={0.3} align="flex-start">
+            {
+              //Egal
+            }
+            <Heading size={1} textColor="white">Vorgehen</Heading>
+          </Slide>
+          <Slide bgImage={images.postit} bgDarken={0.3} align="flex-start">
+            {
+              //Egal
+            }
+            <Heading size={1} textColor="white">Analyse</Heading>
           </Slide>
           <Slide bgImage={images.iha} bgDarken={0.5}>
             {
