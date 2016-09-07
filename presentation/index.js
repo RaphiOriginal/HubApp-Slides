@@ -45,7 +45,7 @@ const images = {
   coffee: require("../assets/SkillShare.png"),
   garage: require("../assets/IHZ_150916_master_locations_L2.jpg"),
   postit: require("../assets/ImpactWS.png"),
-  architecture: require("../assets/Architecture.png"),
+  architecture: require("../assets/react-redux.png"),
 };
 
 preloader(images);
@@ -107,17 +107,8 @@ export default class Presentation extends React.Component {
                 <Text textColor="white" textAlign="left" style={{ paddingRight: 20 }}>
                   Zurzeit hat es vier Standorte in Zürich.
                 </Text>
-                <Text textColor="white" textAlign="left" style={{ paddingRight: 20 }}>
-                  Das Suchen von Personen innerhalb der Community findet zurzeit durch Mundpropaganda statt, da bisherige Tools dazu nicht geeignet sind.
-                </Text>
               </Fill>
               <Fill>
-                <Text textColor="white" textAlign="left" style={{ paddingRight: 20 }}>
-                  Dies dauert lange und kostet Ressourcen bei den Mitarbeiter.
-                </Text>
-                <Text textColor="white" textAlign="left" style={{ paddingRight: 20 }}>
-                  Dass soll in Zukunft geändert werden.
-                </Text>
               </Fill>
             </Layout>
           </Slide>
@@ -269,13 +260,6 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
-          <Slide bgColor="white" >
-            <Layout>
-              <Fill>
-                <Image src={images.architecture} align="flex-start" width="100%" />
-              </Fill>
-            </Layout>
-          </Slide>
           <Slide bgImage={images.coffee} align="flex-start" bgDarken={0.3}>
             {
               //Livio
@@ -285,6 +269,13 @@ export default class Presentation extends React.Component {
               <Fill>
                 <Text textAlign="left" textColor="white">Die Kooperation mit dem Kunden und dessen Mitarbeiter ☕️,</Text>
                 <Text textAlign="left" textColor="white">sowie die Verwendung von React-Native 🎉.</Text>
+              </Fill>
+            </Layout>
+          </Slide>
+          <Slide bgColor="white" >
+            <Layout>
+              <Fill>
+                <Image src={images.architecture} width="50%"/>
               </Fill>
             </Layout>
           </Slide>
