@@ -46,6 +46,8 @@ const images = {
   garage: require("../assets/IHZ_150916_master_locations_L2.jpg"),
   postit: require("../assets/ImpactWS.png"),
   architecture: require("../assets/react-redux.png"),
+  postman: require("../assets/10251060.png"),
+  lookback: require("../assets/mark.png"),
 };
 
 preloader(images);
@@ -87,6 +89,7 @@ export default class Presentation extends React.Component {
             "<ul>
               <li>Vorstellung Impact Hub</li>
               <li>Aktuelle Situation im Impact Hub wie man Personen sucht</li>
+              <li>Hubnet, Persönliche Suche, Hubonauten</li>
             </ul>">
             {
               //Raffi
@@ -161,14 +164,7 @@ export default class Presentation extends React.Component {
             <Layout style={{ marginTop: 40 }}>
               <Fill>
                 <Text textAlign="left" textColor="white">Das finden einer geeigneten Datenquelle zum lernen.</Text>
-                <BlockQuote style={{ marginTop: 100 }}>
-                  <Quote textColor="white">
-                    Das isch jo wie Google!
-                  </Quote>
-                  <Cite>
-                    Jana Neumann
-                  </Cite>
-                </BlockQuote>
+                <Text textAlign="left" textColor="white">Python-Implementierung bietet mehr als die Java-Implementierung.</Text>
               </Fill>
               <Fill>
                 <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">LinkedIn</Heading></Appear>
@@ -179,6 +175,26 @@ export default class Presentation extends React.Component {
                 <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Impact Hub</Heading></Appear>
               </Fill>
             </Layout>
+          </Slide>
+          <Slide bgColor="primary">
+            {
+              //Raffi
+            }
+            <Heading size={1} caps fit textColor="white">Demo</Heading>
+            <Image src={images.postman} width="10%"/>
+          </Slide>
+          <Slide bgColor="white">
+            {
+              //Raffi
+            }
+            <BlockQuote style={{ marginTop: 100 }}>
+              <Quote textColor="primary">
+                Das isch jo wie Google!
+              </Quote>
+              <Cite textColor="black">
+                Jana Neumann
+              </Cite>
+            </BlockQuote>
           </Slide>
           <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5}>
             {
@@ -203,6 +219,7 @@ export default class Presentation extends React.Component {
               <li>Action: Suche starten</li>
               <li>Reward: Resultate erhalten, Similarity unterstützt dabei</li>
               <li>Investment: Angabe von skills, weitere investments notwendig</li>
+              <li>Nächsten Trigger vorbereiten</li>
             </ul>">
             {
               //Raffi
@@ -246,8 +263,10 @@ export default class Presentation extends React.Component {
             <Heading size={1} fit caps textColor="white">Demo</Heading>
             <Heading size={3} textColor="white" margin={70}>📲</Heading>
           </Slide>
-
           <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5}>
+            {
+              //Livio
+            }
             <Heading size={1} textColor="white">Umsetzung</Heading>
             <Layout style={{ marginTop: 40 }}>
               <Fill>
@@ -257,6 +276,18 @@ export default class Presentation extends React.Component {
                 <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">React Native</Heading></Appear>
                 <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Redux</Heading></Appear>
                 <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">ImmutableJS</Heading></Appear>
+              </Fill>
+            </Layout>
+          </Slide>
+          <Slide bgImage={images.coffee} align="flex-start" bgDarken={0.3}>
+            {
+              //
+            }
+            <Heading>Highlights</Heading>
+            <Layout style={{ marginTop: 230 }}>
+              <Fill>
+                <Text textAlign="left" textColor="white">Die Kooperation mit dem Kunden und dessen Mitarbeiter ☕️,</Text>
+                <Text textAlign="left" textColor="white">sowie die Verwendung von React-Native 🎉.</Text>
               </Fill>
             </Layout>
           </Slide>
@@ -291,12 +322,19 @@ export default class Presentation extends React.Component {
               //Raffi
             }
             <Heading>Usertests</Heading>
-            <Layout style={{ marginTop: 230 }}>
+            <Layout style={{ marginTop: 220 }}>
               <Fill>
-                <Text textAlign="left" textColor="white">Die Kooperation mit dem Kunden und dessen Mitarbeiter ☕️,</Text>
-                <Text textAlign="left" textColor="white">sowie die Verwendung von React-Native 🎉.</Text>
+                <Text textAlign="left" textColor="white">Lookback direkt in die Applikation integriert.</Text>
+                <Text textAlign="left" textColor="white">Nimmt die Tabs auf und sendet die Aufnahme direkt auf das Dashboard.</Text>
               </Fill>
             </Layout>
+          </Slide>
+          <Slide bgColor="primary">
+            {
+              //Raffi
+            }
+            <Heading size={1} caps fit textColor="white">Demo</Heading>
+            <Image src={images.lookback} width="10%"/>
           </Slide>
           <Slide bgImage={images.garage} align="flex-start" bgDarken={0.7}>
             {
