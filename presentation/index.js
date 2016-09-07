@@ -76,12 +76,15 @@ export default class Presentation extends React.Component {
             <Heading size={1} textColor="white">Inhalt</Heading>
             <Layout style={{ marginTop: 40 }}>
               <Fill>
-                <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Impact Hub</Heading>
-                <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Herausforderungen</Heading>
-                <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Demo</Heading>
-                <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Highlights</Heading>
-                <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Reflexion</Heading>
-                <Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Ausblick</Heading>
+                <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Impact Hub</Heading>
+                <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Vorgehen</Heading>
+                <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Analyse</Heading>
+                <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Herausforderungen</Heading>
+                <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Demo</Heading>
+                <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Umsetztung</Heading>
+                <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Highlights</Heading>
+                <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Reflexion</Heading>
+                <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Ausblick</Heading>
               </Fill>
             </Layout>
           </Slide>
