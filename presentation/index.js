@@ -53,7 +53,14 @@ const images = {
 preloader(images);
 
 const theme = createTheme({
-  primary: "#198caa"
+  primary: "#198caa",
+  light: 'white',
+  dark: 'black',
+  blue: '#198caa',
+  green: '#99b149',
+  red: '#e46648',
+  orange: '#d2930f',
+  gray: 'rgb(146, 146, 146)'
 });
 
 export default class Presentation extends React.Component {
@@ -118,11 +125,26 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
-          <Slide bgImage={images.postit} bgDarken={0.3} align="flex-start">
+          <Slide bgImage={images.postit} bgDarken={0.7} align="flex-start">
             {
               //Egal
             }
             <Heading size={1} textColor="white">Vorgehen</Heading>
+            <Layout style={{ marginTop: 40 }}>
+              <Fill>
+                <Text textAlign="left" textColor="white">Initiale Analyse: 7 Wochen</Text>
+                <Text textAlign="left" textColor="white"></Text>
+                <Text textAlign="left" textColor="white">Iteratives Vorgehen: 18 Wochen / 6 Sprints</Text>
+              </Fill>
+              <Fill>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Sprint Planung</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Wireframing</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Testing</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Styleguide</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Implementation</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Sprint Demo</Heading></Appear>
+              </Fill>
+            </Layout>
           </Slide>
           <Slide bgImage={images.postit} bgDarken={0.3} align="flex-start">
             {
@@ -273,36 +295,10 @@ export default class Presentation extends React.Component {
             <Heading size={1} textColor="white">Umsetzung</Heading>
             <Layout style={{ marginTop: 40 }}>
               <Fill>
-                <Text textAlign="left" textColor="white">Das Design-Pattern von Nir Eyal umfasst vier States.</Text>
-              </Fill>
-              <Fill>
                 <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">React Native</Heading></Appear>
-                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Redux</Heading></Appear>
-                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">ImmutableJS</Heading></Appear>
-              </Fill>
-            </Layout>
-          </Slide>
-          <Slide bgImage={images.coffee} align="flex-start" bgDarken={0.3}>
-            {
-              //
-            }
-            <Heading>Highlights</Heading>
-            <Layout style={{ marginTop: 230 }}>
-              <Fill>
-                <Text textAlign="left" textColor="white">Die Kooperation mit dem Kunden und dessen Mitarbeiter ☕️,</Text>
-                <Text textAlign="left" textColor="white">sowie die Verwendung von React-Native 🎉.</Text>
-              </Fill>
-            </Layout>
-          </Slide>
-          <Slide bgImage={images.coffee} align="flex-start" bgDarken={0.3}>
-            {
-              //Livio
-            }
-            <Heading>React-Native</Heading>
-            <Layout style={{ marginTop: 230 }}>
-              <Fill>
-                <Text textAlign="left" textColor="white">Die Kooperation mit dem Kunden und dessen Mitarbeiter ☕️,</Text>
-                <Text textAlign="left" textColor="white">sowie die Verwendung von React-Native 🎉.</Text>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Redux &amp; ImmutableJS</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="green">Java / Spring</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="green">Word2Vec</Heading></Appear>
               </Fill>
             </Layout>
           </Slide>
@@ -310,6 +306,16 @@ export default class Presentation extends React.Component {
             <Layout>
               <Fill>
                 <Image src={images.architecture} width="50%"/>
+              </Fill>
+            </Layout>
+          </Slide>
+          <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5}>
+            <Heading>Testing</Heading>
+            <Layout style={{ marginTop: 220 }}>
+              <Fill>
+                <Link href="https://www.youtube.com/watch?v=XG5lap9xEIk" target="_blank">
+                  <Text textAlign="left" textColor="white">Sicherstellen, dass bestehender Code nicht bricht.</Text>
+                </Link>
               </Fill>
             </Layout>
           </Slide>
