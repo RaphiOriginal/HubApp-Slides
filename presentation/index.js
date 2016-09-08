@@ -48,6 +48,7 @@ const images = {
   architecture: require("../assets/react-redux.png"),
   postman: require("../assets/10251060.png"),
   lookback: require("../assets/mark.png"),
+  binocular: require("../assets/binocular.jpg"),
 };
 
 preloader(images);
@@ -81,7 +82,7 @@ export default class Presentation extends React.Component {
               //Egal
             }
             <Heading size={1} textColor="white">Inhalt</Heading>
-            <Layout style={{ marginTop: 40 }}>
+            <Layout style={{ marginTop: 20 }}>
               <Fill>
                 <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Impact Hub</Heading>
                 <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Vorgehen</Heading>
@@ -151,13 +152,13 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
-          <Slide bgImage={images.postit} bgDarken={0.6} align="flex-start">
+          <Slide bgImage={images.postit} bgDarken={0.7} align="flex-start">
             {
               //Egal
             }
             <Heading size={1} textColor="white">Analyse</Heading>
             <List textColor="white">
-              <ListItem>Suchbedürfniss nach Namen und Fähigkeit</ListItem>
+              <ListItem>Suchbedürfnis nach Namen und Fähigkeit</ListItem>
               <ListItem>Anwesende Personen finden</ListItem>
               <ListItem>Kontakt zu den Mitarbeitern</ListItem>
             </List>
@@ -242,9 +243,9 @@ export default class Presentation extends React.Component {
                 <Text textAlign="left" textColor="white">Erstellen von brauchbaren UI-Komponenten.</Text>
               </Fill>
               <Fill>
-                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Tags</Heading></Appear>
-                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Tagcloud</Heading></Appear>
                 <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Buttons</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Tags</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Tag Cloud</Heading></Appear>
               </Fill>
             </Layout>
           </Slide>
@@ -332,7 +333,7 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
-          <Slide bgImage={images.coffee} align="flex-start" bgDarken={0.3} notes=
+          <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5} notes=
             "<ul>
               <li>Lookback ist kostenlos</li>
               <li>Lookback braucht keinen Jailbreak</li>
@@ -362,7 +363,7 @@ export default class Presentation extends React.Component {
               <Fill>
                 <Text textAlign="left" textColor="white">React-Native für die Implementierung 🎉.</Text>
                 <Text textAlign="left" textColor="white">Mitarbeit des Kunden und dessen Mitarbeitern ☕️.</Text>
-                <Text textAlign="left" textColor="white">Word2Vec als starkes Tool 🚀.</Text>
+                <Text textAlign="left" textColor="white">Word2Vec als beeindruckendes Tool 🚀.</Text>
               </Fill>
             </Layout>
           </Slide>
@@ -375,17 +376,27 @@ export default class Presentation extends React.Component {
               <Fill>
                 <Text textSize={60} textAlign="left" textColor="white">Langsamer Start des Projektes.</Text>
                 <Text textSize={60} textAlign="left" textColor="white">Qualität erster Interviews.</Text>
-                <Text textSize={60} textAlign="left" textColor="white">Mitarbeit der Members.</Text>
+                <Text textSize={60} textAlign="left" textColor="white">Mitarbeit der Member.</Text>
                 <Text textSize={60} textAlign="left" textColor="white">Usability Testing.</Text>
                 <Text textSize={60} textAlign="left" textColor="white">Motivation.</Text>
               </Fill>
             </Layout>
           </Slide>
-          <Slide>
+          <Slide align="flex-start" bgImage={images.binocular} bgDarken={0.5} notes=
+            "<ul>
+              <li>Word2Vec als microservice in python</li>
+              <li>Mehr investmentmöglichkeiten z.B. Favoritenliste, chat etc.</li>
+              <li>durch phrases die überarbeitung der internen representation der Tags</li>
+              <li>optimierung der vervolständigketis Balken z.B. durch Umbenennung und neuberechnung des wertes</li>
+            </ul>">
             {
-              //
+              //Raffi
             }
             <Heading size={1} textColor="white">Ausblick</Heading>
+            <Text style={{ marginTop: 170 }} textColor="white">Meeting mit dem Kunden.</Text>
+            <Text style={{ marginTop: 10 }} textColor="white">Word2Vec als Microservice.</Text>
+            <Text style={{ marginTop: 10 }} textColor="white">Tagging repräsentation.</Text>
+            <Text style={{ marginTop: 10 }} textColor="white">Motivation zum Updaten.</Text>
           </Slide>
           <Slide>
             {
