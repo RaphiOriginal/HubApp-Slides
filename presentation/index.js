@@ -307,7 +307,7 @@ export default class Presentation extends React.Component {
             <Layout style={{ marginTop: 40 }}>
               <Fill>
                 <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">React Native</Heading></Appear>
-                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Redux &amp; ImmutableJS</Heading></Appear>
+                <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Redux</Heading></Appear>
                 <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="green">Java / Spring</Heading></Appear>
                 <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="green">Word2Vec</Heading></Appear>
               </Fill>
@@ -344,23 +344,31 @@ export default class Presentation extends React.Component {
               //Raffi
             }
             <Heading>Usertests</Heading>
-            <Layout style={{ marginTop: 220 }}>
+            <Layout style={{ marginTop: 170 }}>
               <Fill>
                 <Text textAlign="left" textColor="white">Lookback direkt in die Applikation integriert.</Text>
                 <Text textAlign="left" textColor="white">Nimmt die Tabs auf und sendet die Aufnahme direkt auf das Dashboard.</Text>
               </Fill>
             </Layout>
           </Slide>
-          <Slide bgColor="primary">
+          <Slide bgImage={images.coffee} align="flex-start" bgDarken={0.3} notes=
+            "<ul>
+            </ul>">
             {
               //Raffi
             }
-            <Heading size={1} caps fit textColor="white">Demo</Heading>
-            <Image src={images.lookback} width="10%"/>
+            <Heading>Highlights</Heading>
+            <Layout style={{ marginTop: 150 }}>
+              <Fill>
+                <Text textAlign="left" textColor="white">React-Native für die Implementierung 🎉.</Text>
+                <Text textAlign="left" textColor="white">Mitarbeit des Kunden und dessen Mitarbeitern ☕️.</Text>
+                <Text textAlign="left" textColor="white">Word2Vec als starkes Tool 🚀.</Text>
+              </Fill>
+            </Layout>
           </Slide>
           <Slide bgImage={images.garage} align="flex-start" bgDarken={0.7}>
             {
-              //
+              //Livio
             }
             <Heading>Reflexion</Heading>
             <Layout style={{ marginTop: 100 }}>
