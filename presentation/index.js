@@ -73,10 +73,10 @@ export default class Presentation extends React.Component {
               //Egal
             }
             <Heading size={1} fit textColor="white">Bachelorthesis - HubApp</Heading>
-            <Text textColor="white">Developed with ❤️ by Livio and Raphael</Text>
+            <Text textColor="white">Livio Bieri und Raphael Brunner</Text>
             <Image src={images.logo} width="300" style={{marginTop: 100}} />
           </Slide>
-          <Slide bgImage={images.postit} bgDarken={0.3} align="flex-start">
+          <Slide bgImage={images.postit} bgDarken={0.5} align="flex-start">
             {
               //Egal
             }
@@ -88,16 +88,16 @@ export default class Presentation extends React.Component {
                 <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Analyse</Heading>
                 <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Herausforderungen</Heading>
                 <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Demo</Heading>
-                <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Umsetztung</Heading>
+                <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Umsetzung</Heading>
                 <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Highlights</Heading>
-                <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Reflexion</Heading>
-                <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Ausblick</Heading>
+                <Heading padding={10} margin={10} size={6} textColor="white" bgColor="primary">Reflexion & Ausblick</Heading>
               </Fill>
             </Layout>
           </Slide>
           <Slide bgImage={images.ih} align="flex-start" bgDarken={0.3} notes=
             "<ul>
               <li>Vorstellung Impact Hub</li>
+              <li>Co-Working space, erklähren</li>
               <li>Aktuelle Situation im Impact Hub wie man Personen sucht</li>
               <li>Hubnet, Persönliche Suche, Hubonauten</li>
             </ul>">
@@ -117,15 +117,19 @@ export default class Presentation extends React.Component {
                 <Text textColor="white" textAlign="left" style={{ paddingRight: 20 }}>
                   Impact Hub hat weltweit über 12000 Mitglieder, davon sind etwa 700 in Zürich.
                 </Text>
-                <Text textColor="white" textAlign="left" style={{ paddingRight: 20 }}>
-                  Zurzeit hat es vier Standorte in Zürich.
+                <Text textColor="white" textAlign="left" style={{ paddingRight: 20, marginTop: 10}}>
+                  Zurzeit vier Standorte in Zürich.
                 </Text>
               </Fill>
               <Fill>
               </Fill>
             </Layout>
           </Slide>
-          <Slide bgImage={images.postit} bgDarken={0.7} align="flex-start">
+          <Slide bgImage={images.postit} bgDarken={0.7} align="flex-start" notes=
+            "<ul>
+              <li>Interviews, verstehen der Systeme & Daten, bzw. Userbasis. => Stories</li>
+              <li>Lean UX angelehntes Vorgehen</li>
+            </ul>">
             {
               //Egal
             }
@@ -134,7 +138,8 @@ export default class Presentation extends React.Component {
               <Fill>
                 <Text textAlign="left" textColor="white">Initiale Analyse: 7 Wochen</Text>
                 <Text textAlign="left" textColor="white"></Text>
-                <Text textAlign="left" textColor="white">Iteratives Vorgehen: 18 Wochen / 6 Sprints</Text>
+                <Text textAlign="left" textColor="white">Iteratives Vorgehen</Text>
+                <Heading style={{ marginTop: 30 }} textAlign="left" size={5} textColor="white">18 Wochen/6 Sprints</Heading>
               </Fill>
               <Fill>
                 <Appear><Heading padding={10} margin={10} size={5} textColor="white" bgColor="primary">Sprint Planung</Heading></Appear>
@@ -146,11 +151,17 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
-          <Slide bgImage={images.postit} bgDarken={0.3} align="flex-start">
+          <Slide bgImage={images.postit} bgDarken={0.6} align="flex-start">
             {
               //Egal
             }
             <Heading size={1} textColor="white">Analyse</Heading>
+            <List textColor="white">
+              <ListItem>Suchbedürfniss nach Namen und Fähigkeit</ListItem>
+              <ListItem>Anwesende Personen finden</ListItem>
+              <ListItem>Kontakt zu den Mitarbeitern</ListItem>
+            </List>
+            <Text textAlign="left" textColor="white">Lärm wurde ebenfalls erwähnt</Text>
           </Slide>
           <Slide bgImage={images.iha} bgDarken={0.5} notes=
             "<ul>
@@ -178,7 +189,7 @@ export default class Presentation extends React.Component {
           <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5} notes=
             "<ul>
               <li>Quellen</li>
-              <li>Java vs. Python</li>
+              <li>Java vs. Python: phrases</li>
               <li>Demo: Postman</li>
               <li>Funny Quote</li>
             </ul>">
@@ -302,10 +313,11 @@ export default class Presentation extends React.Component {
               </Fill>
             </Layout>
           </Slide>
-          <Slide bgColor="white" >
+          <Slide bgColor="white" align="flex-start">
+            <Heading size={1} textColor="primary">Architektur</Heading>
             <Layout>
               <Fill>
-                <Image src={images.architecture} width="50%"/>
+                <Image style={{ marginTop: 10 }} src={images.architecture} width="50%"/>
               </Fill>
             </Layout>
           </Slide>
