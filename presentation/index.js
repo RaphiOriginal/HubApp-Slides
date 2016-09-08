@@ -310,12 +310,13 @@ export default class Presentation extends React.Component {
             </Layout>
           </Slide>
           <Slide bgImage={images.iha} align="flex-start" bgDarken={0.5}>
-            <Heading>Testing</Heading>
+            <Heading>Testing &amp; Qualität</Heading>
             <Layout style={{ marginTop: 220 }}>
               <Fill>
                 <Link href="https://www.youtube.com/watch?v=XG5lap9xEIk" target="_blank">
-                  <Text textAlign="left" textColor="white">Sicherstellen, dass bestehender Code nicht bricht.</Text>
+                  <Text textAlign="left" textColor="white">Unittests: Sicherstellen, dass bestehender Code nicht bricht.</Text>
                 </Link>
+                <Text textAlign="left" textColor="white">Code Reviews &amp; statische Codeanalyse (Linting)</Text>
               </Fill>
             </Layout>
           </Slide>
